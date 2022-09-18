@@ -2,7 +2,7 @@
   "expo": {
     "name": "sshs-gupsik",
     "slug": "sshs-gupsik",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/sshs_icon.png",
     "userInterfaceStyle": "light",
@@ -30,6 +30,11 @@
     },
     "web": {
       "favicon": "./assets/sshs_favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c63c972f-8de8-4b07-942e-1b3bd011c008"
+      }
     }
   }
 }
