@@ -54,10 +54,10 @@ export default function App() {
         <View style={styles.row}>
           <View style={{ flexDirection: "row", alignItems: "center", width: "100%", height: "100%" }}>
             <View style={styles.name}>
-              <Text style={{ fontWeight: "bold" }}>아침</Text>
+              <Text style={styles.titleText}>아침</Text>
             </View>
             <View style={styles.content}>
-              <Text style={{ fontWeight: "300" }}>{morning === undefined ? "오늘은 아침이 없어요!" : morning}</Text>
+              <Text style={styles.contentText}>{morning === undefined ? "오늘은 아침이 없어요!" : morning}</Text>
             </View>
           </View>
         </View>
@@ -65,10 +65,10 @@ export default function App() {
         <View style={styles.row}>
           <View style={{ flexDirection: "row", alignItems: "center", width: "100%", height: "100%" }}>
             <View style={styles.name}>
-              <Text style={{ fontWeight: "bold" }}>점심</Text>
+              <Text style={styles.titleText}>점심</Text>
             </View>
             <View style={styles.content}>
-              <Text style={{ fontWeight: "300" }}>{lunch === undefined ? "오늘은 점심이 없어요!" : lunch}</Text>
+              <Text style={styles.contentText}>{lunch === undefined ? "오늘은 점심이 없어요!" : lunch}</Text>
             </View>
           </View>
         </View>
@@ -76,10 +76,10 @@ export default function App() {
         <View style={styles.row}>
           <View style={{ flexDirection: "row", alignItems: "center", width: "100%", height: "100%" }}>
             <View style={styles.name}>
-              <Text style={{ fontWeight: "bold" }}>저녁</Text>
+              <Text style={styles.titleText}>저녁</Text>
             </View>
             <View style={styles.content}>
-              <Text style={{ fontWeight: "300" }}>{dinner === undefined ? "오늘은 저녁이 없어요!" : dinner}</Text>
+              <Text style={styles.contentText}>{dinner === undefined ? "오늘은 저녁이 없어요!" : dinner}</Text>
             </View>
           </View>
         </View>
@@ -87,10 +87,10 @@ export default function App() {
         <View style={styles.rowEnd}>
           <View style={{ flexDirection: "row", alignItems: "center", width: "100%", height: "100%" }}>
             <View style={styles.name}>
-              <Text style={{ fontWeight: "bold" }}>간식</Text>
+              <Text style={styles.titleText}>간식</Text>
             </View>
             <View style={styles.content}>
-              <Text style={{ fontWeight: "300" }}>{snack === undefined ? "오늘은 간식이 없어요!" : snack}</Text>
+              <Text style={styles.contentText}>{snack === undefined ? "오늘은 간식이 없어요!" : snack}</Text>
             </View>
           </View>
         </View>
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title : {
-    height: "5%",
+    marginBottom:"5px",
     fontSize: 15,
     fontWeight: '500'
   },
@@ -144,7 +144,14 @@ const styles = StyleSheet.create({
   },
   content: {
     width: "80%",
-    alignItems: "center",
-    flexDirection: "column"
+    flexDirection: "column",
+    alignContent: "flex-start"
   },
+  titleText: {
+    fontWeight: "bold" 
+  },
+  contentText: {
+    fontWeight: "300",
+    fontSize:12
+  }
 });
