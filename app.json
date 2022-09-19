@@ -2,7 +2,7 @@
   "expo": {
     "name": "급식",
     "slug": "sshs-gupsik",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "orientation": "portrait",
     "icon": "./assets/sshs_icon.png",
     "userInterfaceStyle": "light",
@@ -27,7 +27,7 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.simon_moon.sshsgupsik",
-      "versionCode" : 2
+      "versionCode" : 3
     },
     "web": {
       "favicon": "./assets/sshs_favicon.png"
