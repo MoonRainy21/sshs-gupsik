@@ -26,7 +26,8 @@
         "foregroundImage": "./assets/sshs_adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.simon_moon.sshsgupsik"
+      "package": "com.simon_moon.sshsgupsik",
+      "versionCode" : 2
     },
     "web": {
       "favicon": "./assets/sshs_favicon.png"
