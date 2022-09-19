@@ -28,7 +28,7 @@ export default function App() {
       .get(URL_SNACK)
       .then((response) => {
         const year = new Date().getFullYear()
-        const month = new Date().getMonth()
+        const month = new Date().getMonth()+1
         const day = new Date().getDate()
         //@ts-ignore
         console.log(response.data)
